@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [ParamTest]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="test1(failed)">
-    <parameter name="number" value="9"/>
+    <parameter name="number" value="6"/>
     <classes>
       <class name="ParamTestNGWithParameterized">
         <methods>

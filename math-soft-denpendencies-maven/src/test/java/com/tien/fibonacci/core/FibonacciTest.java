@@ -17,6 +17,6 @@ public class FibonacciTest {
         String expected = "yes";
         String actual = CheckFibonacci.isFibonacci(8)? "yes":"no";
         assertEquals(actual, expected);
-        //assertTrue(false);
+        assertTrue(false);
     }
 }

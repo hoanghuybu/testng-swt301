@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="2" failures="0" name="com.tien.fibonacci.core.FibonacciTest" time="0.025" errors="0" skipped="0">
+<testsuite tests="2" failures="1" name="com.tien.fibonacci.core.FibonacciTest" time="0.083" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="19+36-2238"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-19\bin"/>
-    <property name="maven.multiModuleProjectDirectory" value="E:\Tailieu\SWT301\code\math-soft-denpendencies-maven"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Tailieu\SWT301\code\testng-swt301\math-soft-denpendencies-maven"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="test" value="com.tien.fibonacci.core.FibonacciTest"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="E:\Tailieu\SWT301\code\math-soft-denpendencies-maven"/>
+    <property name="user.dir" value="E:\Tailieu\SWT301\code\testng-swt301\math-soft-denpendencies-maven"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="java.runtime.version" value="19+36-2238"/>
     <property name="os.arch" value="amd64"/>
@@ -63,6 +63,16 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.tien.fibonacci.core.FibonacciTest" name="isFibonacciTest" time="0.025"/>
-  <testcase classname="com.tien.fibonacci.core.FibonacciTest" name="chekcIndexTest" time="0"/>
+  <testcase classname="com.tien.fibonacci.core.FibonacciTest" name="isFibonacciTest" time="0.082">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at com.tien.fibonacci.core.FibonacciTest.isFibonacciTest(FibonacciTest.java:20)
+</failure>
+    <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@7bfcd12c
+</system-out>
+  </testcase>
+  <testcase classname="com.tien.fibonacci.core.FibonacciTest" name="chekcIndexTest" time="0.001"/>
 </testsuite>

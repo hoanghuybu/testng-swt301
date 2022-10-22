@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-ParamTest" class="navigator-link ">
-                    <span>C:\Users\Hoang Anh\Desktop\PRO192\ParamTestWithDataProvider\build\test\classes\testingForParameterized.xml</span>
+                    <span>E:\Tailieu\SWT301\code\testng-swt301\ParamTestNG\ParamTestWithDataProvider\build\test\classes\testingForParameterized.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-ParamTest">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-ParamTest" title="ParamTestNGWithParameterized" class="method navigator-link" hash-for-method="parameterTest(9)">parameterTest(9)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-ParamTest" title="ParamTestNGWithParameterized" class="method navigator-link" hash-for-method="parameterTest(6)">parameterTest(6)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-ParamTest -->
@@ -125,13 +125,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="parameterTest(9)">
-                  </a> <!-- parameterTest(9) -->
+                  <a name="parameterTest(6)">
+                  </a> <!-- parameterTest(6) -->
                   <span class="method-name">parameterTest</span>
-                  <span class="parameters">(9)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [0] but found [0.0]
+                  <span class="parameters">(6)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.0] but found [0.4494897427831779]
 	at ParamTestNGWithParameterized.parameterTest(ParamTestNGWithParameterized.java:23)
-... Removed 29 stack frames
+... Removed 27 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -140,7 +140,7 @@
         </div> <!-- panel ParamTest -->
         <div panel-name="test-xml-ParamTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Hoang Anh\Desktop\PRO192\ParamTestWithDataProvider\build\test\classes\testingForParameterized.xml</span>
+            <span class="header-content">E:\Tailieu\SWT301\code\testng-swt301\ParamTestNG\ParamTestWithDataProvider\build\test\classes\testingForParameterized.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -148,7 +148,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;ParamTest&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;test1&quot;&gt;
-    &lt;parameter name=&quot;number&quot; value=&quot;9&quot;/&gt;
+    &lt;parameter name=&quot;number&quot; value=&quot;6&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;ParamTestNGWithParameterized&quot;/&gt;
     &lt;/classes&gt;
@@ -194,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'parameterTest')
 data.setCell(0, 2, 'ParamTestNGWithParameterized')
-data.setCell(0, 3, 16);
+data.setCell(0, 3, 32);
 window.suiteTableData['ParamTest']= { tableData: data, tableDiv: 'times-div-ParamTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 ms</span>
+              <span class="suite-total-time">Total running time: 32 ms</span>
               <div id="times-div-ParamTest">
               </div> <!-- times-div-ParamTest -->
             </div> <!-- times-div -->
@@ -229,7 +229,7 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">parameterTest(9)</span>
+                <span class="method-name">parameterTest(6)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->

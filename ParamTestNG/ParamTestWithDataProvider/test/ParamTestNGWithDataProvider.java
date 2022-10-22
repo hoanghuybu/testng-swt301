@@ -25,7 +25,7 @@ public class ParamTestNGWithDataProvider {
 
    @DataProvider(name = "test1")
    public static Object[][] getMaxOccurringChar() {
-      return new Object[][] {{'l', "Hello World"}, {'n',"Introduction to Software Engineering"}, {'t',"Software Testing"}, {'e', "Software development project"}, {'e', "Software Requirements"}};
+      return new Object[][] {{'l', "Hello World"}, {'d',"Introduction to Software Engineering"}, {'t',"Software Testing"}, {'e', "Software development project"}, {'e', "Software Requirements"}};
    }
    @Test(dataProvider = "test1")
    public void testgetMaxOccurringChar(char c, String string) {

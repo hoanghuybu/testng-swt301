@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" class="navigator-link">
-              <span class="suite-name border-passed">com.tien.fibonacci.core.FibonacciTest</span>
+              <span class="suite-name border-failed">com.tien.fibonacci.core.FibonacciTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" class="hide-methods failed suite-com.tien.fibonacci.core.FibonacciTest"> (hide)</a> <!-- hide-methods failed suite-com.tien.fibonacci.core.FibonacciTest -->
+                      <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" class="show-methods failed suite-com.tien.fibonacci.core.FibonacciTest"> (show)</a> <!-- show-methods failed suite-com.tien.fibonacci.core.FibonacciTest -->
+                    </span>
+                    <div class="method-list-content failed suite-com.tien.fibonacci.core.FibonacciTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" title="com.tien.fibonacci.core.FibonacciTest" class="method navigator-link" hash-for-method="isFibonacciTest">isFibonacciTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-com.tien.fibonacci.core.FibonacciTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,11 +116,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" title="com.tien.fibonacci.core.FibonacciTest" class="method navigator-link" hash-for-method="chekcIndexTest">chekcIndexTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-com.tien.fibonacci.core.FibonacciTest" title="com.tien.fibonacci.core.FibonacciTest" class="method navigator-link" hash-for-method="isFibonacciTest">isFibonacciTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-com.tien.fibonacci.core.FibonacciTest -->
@@ -121,6 +130,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-com.tien.fibonacci.core.FibonacciTest" class="panel com.tien.fibonacci.core.FibonacciTest">
+          <div class="suite-com.tien.fibonacci.core.FibonacciTest-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.tien.fibonacci.core.FibonacciTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="isFibonacciTest">
+                  </a> <!-- isFibonacciTest -->
+                  <span class="method-name">isFibonacciTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.tien.fibonacci.core.FibonacciTest.isFibonacciTest(FibonacciTest.java:20)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-com.tien.fibonacci.core.FibonacciTest-class-failed -->
           <div class="suite-com.tien.fibonacci.core.FibonacciTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -132,13 +160,6 @@
                   <a name="chekcIndexTest">
                   </a> <!-- chekcIndexTest -->
                   <span class="method-name">chekcIndexTest</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="isFibonacciTest">
-                  </a> <!-- isFibonacciTest -->
-                  <span class="method-name">isFibonacciTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -198,16 +219,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'isFibonacciTest')
 data.setCell(0, 2, 'com.tien.fibonacci.core.FibonacciTest')
-data.setCell(0, 3, 23);
+data.setCell(0, 3, 71);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'chekcIndexTest')
 data.setCell(1, 2, 'com.tien.fibonacci.core.FibonacciTest')
-data.setCell(1, 3, 2);
+data.setCell(1, 3, 1);
 window.suiteTableData['com.tien.fibonacci.core.FibonacciTest']= { tableData: data, tableDiv: 'times-div-com.tien.fibonacci.core.FibonacciTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 25 ms</span>
+              <span class="suite-total-time">Total running time: 72 ms</span>
               <div id="times-div-com.tien.fibonacci.core.FibonacciTest">
               </div> <!-- times-div-com.tien.fibonacci.core.FibonacciTest -->
             </div> <!-- times-div -->
@@ -235,12 +256,14 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.tien.fibonacci.core.FibonacciTest</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">isFibonacciTest</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">chekcIndexTest</span>
-                <span class="method-start">27 ms</span>
+                <span class="method-start">92 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
