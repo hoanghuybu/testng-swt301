@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-22T02:27:34Z" name="com.tien.fibonacci.core.FibonacciTest" finished-at="2022-10-22T02:27:34Z" duration-ms="45">
+    <groups>
+    </groups>
+    <test started-at="2022-10-22T02:27:34Z" name="Command line test" finished-at="2022-10-22T02:27:34Z" duration-ms="45">
+      <class name="com.tien.fibonacci.core.FibonacciTest">
+        <test-method signature="isFibonacciTest()[pri:0, instance:com.tien.fibonacci.core.FibonacciTest@36b4cef0]" started-at="2022-10-22T09:27:34Z" name="isFibonacciTest" finished-at="2022-10-22T09:27:34Z" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- isFibonacciTest -->
+        <test-method signature="chekcIndexTest()[pri:0, instance:com.tien.fibonacci.core.FibonacciTest@36b4cef0]" started-at="2022-10-22T09:27:34Z" name="chekcIndexTest" finished-at="2022-10-22T09:27:34Z" depends-on-methods="com.tien.fibonacci.core.FibonacciTest.isFibonacciTest" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- chekcIndexTest -->
+      </class> <!-- com.tien.fibonacci.core.FibonacciTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- com.tien.fibonacci.core.FibonacciTest -->
+</testng-results>
